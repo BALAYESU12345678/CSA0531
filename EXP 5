@@ -1,0 +1,11 @@
+START TRANSACTION;
+
+INSERT INTO department VALUES (3, 'Finance');
+
+SAVEPOINT sp1;
+
+INSERT INTO department VALUES (4, 'Sales');
+
+ROLLBACK TO sp1;
+
+COMMIT;
