@@ -1,0 +1,7 @@
+INSERT INTO department VALUES (1, 'HR');
+INSERT INTO department VALUES (2, 'IT');
+
+INSERT INTO employee(emp_id, emp_name, salary, dept_id)
+VALUES (101, 'Bala', 30000, 1);
+
+SELECT * FROM employee;
