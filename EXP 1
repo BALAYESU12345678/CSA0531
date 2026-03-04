@@ -1,0 +1,14 @@
+CREATE DATABASE labdb;
+USE labdb;
+
+CREATE TABLE student (
+    id INT,
+    name VARCHAR(50),
+    age INT
+);
+
+ALTER TABLE student ADD grade VARCHAR(10);
+
+TRUNCATE TABLE student;
+
+DROP TABLE student;
