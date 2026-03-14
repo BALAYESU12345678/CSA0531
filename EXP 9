@@ -1,0 +1,7 @@
+SELECT age, COUNT(*) FROM student
+GROUP BY age;
+
+SELECT age, AVG(marks) FROM student
+GROUP BY age
+HAVING AVG(marks) > 70
+ORDER BY age;
