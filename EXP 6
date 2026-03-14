@@ -1,5 +1,5 @@
--- Create User Table
-CREATE TABLE users (
-    user_id SERIAL PRIMARY KEY,
-    name VARCHAR(50),
-    FOREIGN KEY (user_id) REFERENCES users(user_id)
+CREATE USER 'labuser'@'localhost' IDENTIFIED BY '1234';
+
+GRANT SELECT ON labdb.student TO 'labuser'@'localhost';
+
+REVOKE SELECT ON labdb.student FROM 'labuser'@'localhost';
