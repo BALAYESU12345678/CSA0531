@@ -1,0 +1,5 @@
+SELECT * FROM student WHERE marks BETWEEN 60 AND 90;
+SELECT * FROM student WHERE age IN (19,20);
+SELECT COUNT(*) FROM student;
+SELECT AVG(marks) FROM student;
+SELECT MAX(marks) FROM student;
