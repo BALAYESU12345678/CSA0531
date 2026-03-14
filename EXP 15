@@ -1,0 +1,7 @@
+SELECT name,marks,
+CASE
+WHEN marks >=80 THEN 'Distinction'
+WHEN marks >=60 THEN 'Pass'
+ELSE 'Fail'
+END AS Result
+FROM student;
