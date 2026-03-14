@@ -1,0 +1,7 @@
+CREATE TABLE employee(
+eid INT AUTO_INCREMENT PRIMARY KEY,
+ename VARCHAR(50)
+);
+
+INSERT INTO employee(ename) VALUES('Ram');
+SELECT * FROM employee;
